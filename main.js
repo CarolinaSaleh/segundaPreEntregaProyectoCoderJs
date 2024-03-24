@@ -1,24 +1,24 @@
 let totalCarrito = 0
 
-class Producto {
+class producto {
     constructor(nombre, precio){
         this.nombre = nombre
         this.precio = precio
     }
 }
 
-let malbec = new Producto("Malbec",70000)
-let cabernetSauvignon = new Producto("Cabernet Sauvignon",38000)
-let cabernetFranc = new Producto("Cabernet Franc", 67000)
-let chardonnay = new Producto("Chardonnay", 84000)
-let pinotNoir = new Producto("Pinot Noir", 120000)
-let vermut = new Producto("Vermut", 95000)
-let bonarda = new Producto("Bonarda", 43000)
-let sauvignonBlanc = new Producto("Sauvignon Blanc", 60000)
-let semillon = new Producto("Semillón", 68000)
-let pinotNoirRose = new Producto("Pinot Noir Rosé", 32000)
-let rose = new Producto("Rosé", 25000)
-let blend = new Producto("Blend", 39000)
+let malbec = new producto("Malbec",70000)
+let cabernetSauvignon = new producto("Cabernet Sauvignon",38000)
+let cabernetFranc = new producto("Cabernet Franc", 67000)
+let chardonnay = new producto("Chardonnay", 84000)
+let pinotNoir = new producto("Pinot Noir", 120000)
+let vermut = new producto("Vermut", 95000)
+let bonarda = new producto("Bonarda", 43000)
+let sauvignonBlanc = new producto("Sauvignon Blanc", 60000)
+let semillon = new producto("Semillón", 68000)
+let pinotNoirRose = new producto("Pinot Noir Rosé", 32000)
+let rose = new producto("Rosé", 25000)
+let blend = new producto("Blend", 39000)
 
 const arrayVinos = {malbec,cabernetSauvignon,cabernetFranc,chardonnay,pinotNoir,vermut,bonarda,sauvignonBlanc,semillon,pinotNoirRose,rose,blend}
 
