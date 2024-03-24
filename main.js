@@ -1,26 +1,26 @@
 let totalCarrito = 0
 
-class producto {
+class Producto {
     constructor(nombre, precio){
         this.nombre = nombre
         this.precio = precio
     }
 }
 
-let malbec = new producto("Malbec",70000)
-let cabernetSauvignon = new producto("Cabernet Sauvignon",38000)
-let cabernetFranc = new producto("Cabernet Franc", 67000)
-let chardonnay = new producto("Chardonnay", 84000)
-let pinotNoir = new producto("Pinot Noir", 120000)
-let vermut = new producto("Vermut", 95000)
-let bonarda = new producto("Bonarda", 43000)
-let sauvignonBlanc = new producto("Sauvignon Blanc", 60000)
-let semillon = new producto("Semillón", 68000)
-let pinotNoirRose = new producto("Pinot Noir Rosé", 32000)
-let rose = new producto("Rosé", 25000)
-let blend = new producto("Blend", 39000)
+let malbec = new Producto("Malbec",70000)
+let cabernetSauvignon = new Producto("Cabernet Sauvignon",38000)
+let cabernetFranc = new Producto("Cabernet Franc", 67000)
+let chardonnay = new Producto("Chardonnay", 84000)
+let pinotNoir = new Producto("Pinot Noir", 120000)
+let vermut = new Producto("Vermut", 95000)
+let bonarda = new Producto("Bonarda", 43000)
+let sauvignonBlanc = new Producto("Sauvignon Blanc", 60000)
+let semillon = new Producto("Semillón", 68000)
+let pinotNoirRose = new Producto("Pinot Noir Rosé", 32000)
+let rose = new Producto("Rosé", 25000)
+let blend = new Producto("Blend", 39000)
 
-const arrayVinos = {malbec,cabernetSauvignon,cabernetFranc,chardonnay,pinotNoir,vermut,bonarda,sauvignonBlanc,semillon,pinotNoirRose,rose,blend}
+const arrayVinos = [malbec,cabernetSauvignon,cabernetFranc,chardonnay,pinotNoir,vermut,bonarda,sauvignonBlanc,semillon,pinotNoirRose,rose,blend]
 
 function comprar(){
     let opciones = parseInt(prompt(`Pulse 1 si desea llevar un  ${arrayVinos[0].nombre} por $${arrayVinos[0].precio}\nPulse 2 si desea llevar un  ${arrayVinos[1].nombre} por $${arrayVinos[1].precio}\nPulse 3 si desea llevar un  ${arrayVinos[2].nombre} por $${arrayVinos[2].precio}\nPulse 4 si desea llevar un  ${arrayVinos[3].nombre} por $${arrayVinos[3].precio}\nPulse 5 si desea llevar un  ${arrayVinos[4].nombre} por $${arrayVinos[4].precio}\nPulse 6 si desea llevar un  ${arrayVinos[5].nombre} por $${arrayVinos[5].precio}\nPulse 7 si desea llevar un  ${arrayVinos[6].nombre} por $${arrayVinos[6].precio}\nPulse 8 si desea llevar un  ${arrayVinos[7].nombre} por $${arrayVinos[7].precio}\nPulse 9 si desea llevar un  ${arrayVinos[8].nombre} por $${arrayVinos[8].precio}\nPulse 10 si desea llevar un  ${arrayVinos[9].nombre} por $${arrayVinos[9].precio}\nPulse 11 si desea llevar un  ${arrayVinos[10].nombre} por $${arrayVinos[10].precio}\nPulse 12 si desea llevar un  ${arrayVinos[11].nombre} por $${arrayVinos[11].precio}\nPulse 13 si desea filtrar por precio más bajo`));
